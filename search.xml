@@ -3,7 +3,7 @@
   <entry>
     <title>AI基本概念</title>
     <url>/2024/12/23/AI%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</url>
-    <content><![CDATA[<p></p><h2 id="1-传统编程指令-vs-机器学习"><a href="#1-传统编程指令-vs-机器学习" class="headerlink" title="1.传统编程指令 vs 机器学习"></a>1.传统编程指令 vs 机器学习</h2><h3 id="传统编程"><a href="#传统编程" class="headerlink" title="传统编程"></a>传统编程</h3><p><strong>定义:</strong><br>传统编程是一种通过明确的指令和规则来告诉计算机如何完成任务的编程方式。程序员需要详细地编写每一步操作的代码，计算机会严格按照这些指令执行。</p><p></p>
+    <content><![CDATA[<h2 id="1-传统编程指令-vs-机器学习"><a href="#1-传统编程指令-vs-机器学习" class="headerlink" title="1.传统编程指令 vs 机器学习"></a>1.传统编程指令 vs 机器学习</h2><h3 id="传统编程"><a href="#传统编程" class="headerlink" title="传统编程"></a>传统编程</h3><p><strong>定义:</strong><br>传统编程是一种通过明确的指令和规则来告诉计算机如何完成任务的编程方式。程序员需要详细地编写每一步操作的代码，计算机会严格按照这些指令执行。</p>
 <p><strong>特点:</strong></p>
 <ul>
 <li><strong>明确的规则:</strong> 程序员需要明确地定义每个步骤和规则。</li>
@@ -61,22 +61,10 @@
 <h3 id="通俗易懂的例子"><a href="#通俗易懂的例子" class="headerlink" title="通俗易懂的例子"></a>通俗易懂的例子</h3><p>假设我们有一个智能语音助手（如Siri或Alexa），以下是NLP、NLU和NLG在其中的具体应用：</p>
 <ol>
 <li><strong>用户输入:</strong> 用户说：“明天的天气怎么样？”</li>
-<li><strong>自然语言处理（NLP）:</strong> <ul>
-<li><strong>语音识别:</strong> 首先将用户的语音转换为文本：“明天的天气怎么样？”</li>
-<li><strong>文本预处理:</strong> 清理和规范化文本，如去除多余的空格或标点。</li>
-</ul>
-</li>
-<li><strong>自然语言理解（NLU）:</strong> <ul>
-<li><strong>意图识别:</strong> 系统识别用户的意图是询问天气。</li>
-<li><strong>实体识别:</strong> 系统识别出“明天”是时间相关的实体。</li>
-</ul>
-</li>
+<li><strong>自然语言处理（NLP）:</strong>  <strong>语音识别:</strong> 首先将用户的语音转换为文本：“明天的天气怎么样？” <strong>文本预处理:</strong> 清理和规范化文本，如去除多余的空格或标点。</li>
+<li><strong>自然语言理解（NLU）:</strong>  <strong>意图识别:</strong> 系统识别用户的意图是询问天气。 <strong>实体识别:</strong> 系统识别出“明天”是时间相关的实体。</li>
 <li><strong>数据处理:</strong> 系统查询天气数据库，获取“明天”的天气信息。</li>
-<li><strong>自然语言生成（NLG）:</strong> <ul>
-<li><strong>生成文本:</strong> 系统将查询结果转换为自然语言文本：“明天的天气是晴天，最高气温25度，最低气温15度。”</li>
-<li><strong>语音合成:</strong> 将生成的文本转换为语音，并播放给用户。</li>
-</ul>
-</li>
+<li><strong>自然语言生成（NLG）:</strong>  <strong>生成文本:</strong> 系统将查询结果转换为自然语言文本：“明天的天气是晴天，最高气温25度，最低气温15度。” <strong>语音合成:</strong> 将生成的文本转换为语音，并播放给用户。</li>
 </ol>
 <p>通过这个例子，可以看到NLP、NLU和NLG如何协同工作来实现一个完整的自然语言交互过程。</p>
 <h2 id="3-监督学习（Supervised-Learning）"><a href="#3-监督学习（Supervised-Learning）" class="headerlink" title="3.监督学习（Supervised Learning）"></a>3.监督学习（Supervised Learning）</h2><p>监督学习是一种机器学习方法，模型通过已知的输入和输出数据进行训练，直到模型能够准确地匹配输入和输出的关系。</p>
@@ -99,18 +87,9 @@
 </ul>
 <h2 id="5-强化学习（Reinforcement-Learning）"><a href="#5-强化学习（Reinforcement-Learning）" class="headerlink" title="5.强化学习（Reinforcement Learning）"></a>5.强化学习（Reinforcement Learning）</h2><p>强化学习是一种机器学习方法，其中一个 <strong>智能体（Agent）</strong> 通过与 <strong>环境（Environment）</strong> 互动，以试错的方式学习如何完成任务或达到目标。</p>
 <h3 id="核心概念："><a href="#核心概念：" class="headerlink" title="核心概念："></a>核心概念：</h3><ol>
-<li><strong>状态（States）</strong>：状态是对当前环境的一种描述。在任何时刻，智能体所处的状态反映了当前的环境情况。<ul>
-<li><strong>例子</strong>：在一个迷宫游戏中，状态可以是智能体当前所在的位置；在围棋中，状态就是棋盘上每颗棋子的布局。</li>
-</ul>
-</li>
-<li><strong>奖励（Reward）</strong>：奖励是对智能体在某个状态下采取某个动作后的反馈，它可以是正的（奖励）或负的（惩罚）。<ul>
-<li><strong>例子</strong>：在迷宫游戏中，如果智能体走到正确的方向，可以获得正的奖励（例如+10分）；如果撞到墙壁，可能会获得负的奖励（例如-10分）。</li>
-</ul>
-</li>
-<li><strong>智能体（Agent）</strong>：智能体是执行动作并接收奖励的决策者。智能体通过不断地选择动作来改变其状态，从而尝试最大化累计奖励。<ul>
-<li><strong>例子</strong>：在自动驾驶汽车中，智能体就是控制汽车行驶的算法；在游戏中，智能体就是玩家控制的角色或者对手AI。</li>
-</ul>
-</li>
+<li><strong>状态（States）</strong>：状态是对当前环境的一种描述。在任何时刻，智能体所处的状态反映了当前的环境情况。 <strong>例子</strong>：在一个迷宫游戏中，状态可以是智能体当前所在的位置；在围棋中，状态就是棋盘上每颗棋子的布局。</li>
+<li><strong>奖励（Reward）</strong>：奖励是对智能体在某个状态下采取某个动作后的反馈，它可以是正的（奖励）或负的（惩罚）。 <strong>例子</strong>：在迷宫游戏中，如果智能体走到正确的方向，可以获得正的奖励（例如+10分）；如果撞到墙壁，可能会获得负的奖励（例如-10分）。</li>
+<li><strong>智能体（Agent）</strong>：智能体是执行动作并接收奖励的决策者。智能体通过不断地选择动作来改变其状态，从而尝试最大化累计奖励。 <strong>例子</strong>：在自动驾驶汽车中，智能体就是控制汽车行驶的算法；在游戏中，智能体就是玩家控制的角色或者对手AI。</li>
 </ol>
 <h3 id="强化学习的过程："><a href="#强化学习的过程：" class="headerlink" title="强化学习的过程："></a>强化学习的过程：</h3><ol>
 <li><strong>观察</strong>：智能体观察当前的状态。</li>
@@ -149,33 +128,15 @@
 <li><strong>实际例子</strong>：在房价预测问题中，你不仅使用了面积、位置、房龄、装修等特征，还加入了一些不相关的特征（如前几天是否下过雨），模型在训练数据上表现非常好，但在新数据上预测效果很差。</li>
 </ul>
 <h3 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h3><ol>
-<li><strong>欠拟合 (Under-fitting)</strong>：模型太简单，不能很好地捕捉数据中的模式。<ul>
-<li><strong>简单例子</strong>：用直线拟合“U”形数据。</li>
-<li><strong>实际例子</strong>：房价预测中只用面积一个特征。</li>
-</ul>
-</li>
-<li><strong>最佳拟合 (Optimal-fitting)</strong>：模型恰到好处，既能很好地拟合训练数据，也能对新数据有良好表现。<ul>
-<li><strong>简单例子</strong>：用合适的二次曲线拟合“U”形数据。</li>
-<li><strong>实际例子</strong>：房价预测中使用了多个重要特征。</li>
-</ul>
-</li>
-<li><strong>过拟合 (Over-fitting)</strong>：模型太复杂，过度记住了训练数据，无法泛化到新数据。<ul>
-<li><strong>简单例子</strong>：用复杂的高次多项式拟合“U”形数据，过度拟合了每个数据点。</li>
-<li><strong>实际例子</strong>：房价预测中加入了很多不相关特征，结果在新数据上效果不好。</li>
-</ul>
-</li>
+<li><strong>欠拟合 (Under-fitting)</strong>：模型太简单，不能很好地捕捉数据中的模式。 <strong>简单例子</strong>：用直线拟合“U”形数据。 <strong>实际例子</strong>：房价预测中只用面积一个特征。</li>
+<li><strong>最佳拟合 (Optimal-fitting)</strong>：模型恰到好处，既能很好地拟合训练数据，也能对新数据有良好表现。 <strong>简单例子</strong>：用合适的二次曲线拟合“U”形数据。 <strong>实际例子</strong>：房价预测中使用了多个重要特征。</li>
+<li><strong>过拟合 (Over-fitting)</strong>：模型太复杂，过度记住了训练数据，无法泛化到新数据。 <strong>简单例子</strong>：用复杂的高次多项式拟合“U”形数据，过度拟合了每个数据点。 <strong>实际例子</strong>：房价预测中加入了很多不相关特征，结果在新数据上效果不好。</li>
 </ol>
 <p>总之，目标是找到让模型最佳拟合训练数据和测试数据的平衡点，既不过于简单也不过于复杂。</p>
 <h2 id="7-深度学习"><a href="#7-深度学习" class="headerlink" title="7.深度学习"></a>7.深度学习</h2><p>深度学习是机器学习的一个重要分支，它突破了传统机器学习算法的瓶颈，在多个研究与应用领域取得了重大进展。</p>
-<div style="text-align: center;">
-  <img src="/images/ai-machine-learning.png" width="60%" alt="机器学习算法">
-</div>
-
+<p><img src="/images/ai-machine-learning.png" width="60%" alt="机器学习算法"></p>
 <p>深度学习是指通过构建多层神经网络结构来学习数据的特征，以便于进行数据分类、回归与生成。与浅层学习相比，神经网络结构的层数更多（一般大于或等于4层），通过多层神经网络结构可以学习得到更丰富的数据特征。在理解深度学习时，我们需要了解神经网络的三种关键层：输入层（Input Layer）、隐藏层（Hidden Layer）和输出层（Output Layer）。</p>
-<div style="text-align: center;">
-  <img src="/images/ai-feedforward.png" width="60%" alt="机器学习算法">
-</div>
-
+<p><img src="/images/ai-feedforward.png" width="60%" alt="机器学习算法"></p>
 <h3 id="输入层-Input-Layer"><a href="#输入层-Input-Layer" class="headerlink" title="输入层 (Input Layer)"></a>输入层 (Input Layer)</h3><p><strong>输入层</strong>是神经网络的第一个层，它接收原始的数据输入。这些输入可以是图像的像素值、文本的词向量或其他形式的数据。输入层的节点（或神经元）数目取决于输入数据的特征数。</p>
 <h4 id="例子：-1"><a href="#例子：-1" class="headerlink" title="例子："></a>例子：</h4><ul>
 <li><strong>图像分类</strong>：如果你有一张28x28像素的灰度图像作为输入，输入层将有28×28=784个节点，每个节点代表一个像素值。</li>
@@ -192,33 +153,14 @@
 <li><strong>房价预测</strong>：如果你需要预测房价，输出层将有一个节点，它输出房价的预测值。</li>
 </ul>
 <h3 id="综合例子："><a href="#综合例子：" class="headerlink" title="综合例子："></a>综合例子：</h3><h4 id="任务：图像分类"><a href="#任务：图像分类" class="headerlink" title="任务：图像分类"></a>任务：图像分类</h4><ol>
-<li><strong>输入层</strong>：假设我们分类的是28x28像素的手写数字图像。<ul>
-<li><strong>输入层节点数</strong>：784个节点，每个节点对应一个像素值。</li>
-</ul>
-</li>
-<li><strong>隐藏层</strong>：假设有两层隐藏层。<ul>
-<li><strong>第一隐藏层</strong>：提取简单特征（如边缘），设有128个节点。</li>
-<li><strong>第二隐藏层</strong>：提取更复杂的特征（如更高层次的形状），设有64个节点。</li>
-</ul>
-</li>
-<li><strong>输出层</strong>：假设分类为10个类别（数字0到9）。<ul>
-<li><strong>输出层节点数</strong>：10个节点，每个节点代表图像属于某个数字类别的概率。</li>
-</ul>
-</li>
+<li><strong>输入层</strong>：假设我们分类的是28x28像素的手写数字图像。 <strong>输入层节点数</strong>：784个节点，每个节点对应一个像素值。</li>
+<li><strong>隐藏层</strong>：假设有两层隐藏层。 <strong>第一隐藏层</strong>：提取简单特征（如边缘），设有128个节点。 <strong>第二隐藏层</strong>：提取更复杂的特征（如更高层次的形状），设有64个节点。</li>
+<li><strong>输出层</strong>：假设分类为10个类别（数字0到9）。 <strong>输出层节点数</strong>：10个节点，每个节点代表图像属于某个数字类别的概率。</li>
 </ol>
 <h4 id="任务：房价预测"><a href="#任务：房价预测" class="headerlink" title="任务：房价预测"></a>任务：房价预测</h4><ol>
-<li><strong>输入层</strong>：假设预测房价时用五个特征：面积、位置、房龄、房型、市场状况。<ul>
-<li><strong>输入层节点数</strong>：5个节点，每个节点代表一个特征。</li>
-</ul>
-</li>
-<li><strong>隐藏层</strong>：假设有一层隐藏层。<ul>
-<li><strong>隐藏层</strong>：捕捉输入特征之间的复杂关系，设有10个节点。</li>
-</ul>
-</li>
-<li><strong>输出层</strong>：输出预测的房价。<ul>
-<li><strong>输出层节点数</strong>：1个节点，表示预测的房价。</li>
-</ul>
-</li>
+<li><strong>输入层</strong>：假设预测房价时用五个特征：面积、位置、房龄、房型、市场状况。 <strong>输入层节点数</strong>：5个节点，每个节点代表一个特征。</li>
+<li><strong>隐藏层</strong>：假设有一层隐藏层。 <strong>隐藏层</strong>：捕捉输入特征之间的复杂关系，设有10个节点。</li>
+<li><strong>输出层</strong>：输出预测的房价。 <strong>输出层节点数</strong>：1个节点，表示预测的房价。</li>
 </ol>
 <p>简而言之：</p>
 <ol>
@@ -234,70 +176,32 @@
 </ol>
 <h3 id="浅层神经网络（Shallow-Neural-Networks）"><a href="#浅层神经网络（Shallow-Neural-Networks）" class="headerlink" title="浅层神经网络（Shallow Neural Networks）"></a>浅层神经网络（Shallow Neural Networks）</h3><p>浅层神经网络是指包含少量隐藏层（通常只有一个隐藏层）的一种神经网络。由于层数较少，计算相对简单，适用于一些较简单或较小规模的任务。</p>
 <h4 id="例子：-4"><a href="#例子：-4" class="headerlink" title="例子："></a>例子：</h4><ul>
-<li><strong>任务：二分类问题</strong>（如垃圾邮件识别）<ul>
-<li><strong>输入层</strong>：接收邮件的特征（如文本词频等）。</li>
-<li><strong>隐藏层</strong>：只有一层隐藏层，包含若干节点。</li>
-<li><strong>输出层</strong>：输出是两个节点，表示垃圾邮件或正常邮件的概率。</li>
-</ul>
-</li>
+<li><strong>任务：二分类问题</strong>（如垃圾邮件识别） <strong>输入层</strong>：接收邮件的特征（如文本词频等）。 <strong>隐藏层</strong>：只有一层隐藏层，包含若干节点。 <strong>输出层</strong>：输出是两个节点，表示垃圾邮件或正常邮件的概率。</li>
 </ul>
 <p>浅层神经网络虽然简单，但在某些简单任务上表现不俗。例如在垃圾邮件识别时，简单的特征如特定词汇的频率就能较好地区分垃圾邮件。</p>
 <h3 id="深度神经网络（Deep-Neural-Networks）"><a href="#深度神经网络（Deep-Neural-Networks）" class="headerlink" title="深度神经网络（Deep Neural Networks）"></a>深度神经网络（Deep Neural Networks）</h3><p>深度神经网络则包含多个隐藏层，层数较多，使其能够捕捉数据的复杂模式和高级特征。深度神经网络被用来处理更复杂、规模更大的任务，比如图像识别、自驾车、自然语言处理等。</p>
 <h4 id="例子：-5"><a href="#例子：-5" class="headerlink" title="例子："></a>例子：</h4><ul>
-<li><strong>任务：图像分类</strong>（如手写数字识别）<ul>
-<li><strong>输入层</strong>：接收图像的像素值（比如28x28的灰度图像，有784个输入节点）。</li>
-<li><strong>多个隐藏层</strong>：每个层逐步提取图像的不同特征，比如边缘、形状和更复杂的模式。可能包含若干层，每层有大量节点。</li>
-<li><strong>输出层</strong>：输出是多个节点（比如10个节点），每个节点表示图像属于某个类别（如数字0-9）的概率。</li>
-</ul>
-</li>
+<li><strong>任务：图像分类</strong>（如手写数字识别） <strong>输入层</strong>：接收图像的像素值（比如28x28的灰度图像，有784个输入节点）。 <strong>多个隐藏层</strong>：每个层逐步提取图像的不同特征，比如边缘、形状和更复杂的模式。可能包含若干层，每层有大量节点。 <strong>输出层</strong>：输出是多个节点（比如10个节点），每个节点表示图像属于某个类别（如数字0-9）的概率。</li>
 </ul>
 <p>深度神经网络由于其多层结构，能够逐级提取更复杂的特征。例如在图像分类任务中，底层隐藏层可能识别简单的边缘特征，中间层可能识别复杂的形状特征，顶层隐藏层则综合所有特征完成最终的分类任务。</p>
 <h3 id="总结：-1"><a href="#总结：-1" class="headerlink" title="总结："></a>总结：</h3><ol>
-<li><strong>浅层神经网络（Shallow Neural Networks）</strong><ul>
-<li>结构：通常只有一个隐藏层。</li>
-<li>适用任务：简单、规模较小的任务。</li>
-<li><strong>例子</strong>：垃圾邮件识别。</li>
-<li><strong>优势</strong>：计算简单，训练时间短。</li>
-</ul>
-</li>
-<li><strong>深度神经网络（Deep Neural Networks）</strong><ul>
-<li>结构：包含多个隐藏层。</li>
-<li>适用任务：复杂、规模较大的任务。</li>
-<li><strong>例子</strong>：图像分类、自驱动汽车。</li>
-<li><strong>优势</strong>：能够提取复杂的高级特征，更适用于复杂的问题。</li>
-</ul>
-</li>
+<li><strong>浅层神经网络（Shallow Neural Networks）</strong> 结构：通常只有一个隐藏层。 适用任务：简单、规模较小的任务。 <strong>例子</strong>：垃圾邮件识别。 <strong>优势</strong>：计算简单，训练时间短。</li>
+<li><strong>深度神经网络（Deep Neural Networks）</strong> 结构：包含多个隐藏层。 适用任务：复杂、规模较大的任务。 <strong>例子</strong>：图像分类、自驱动汽车。 <strong>优势</strong>：能够提取复杂的高级特征，更适用于复杂的问题。</li>
 </ol>
 <p>通过这个简单的区分，深度神经网络和浅层神经网络的差异主要体现在隐藏层的数量和数据处理能力上。浅层神经网络适合简单任务，而深度神经网络则在处理复杂任务时表现更为强大。</p>
 <h2 id="9-CNN（卷积神经网络）"><a href="#9-CNN（卷积神经网络）" class="headerlink" title="9.CNN（卷积神经网络）"></a>9.CNN（卷积神经网络）</h2><p>卷积神经网络（CNN）是一种特别设计用来处理具有类似网格结构的数据的深度学习模型，例如图像（本质上是像素的矩阵）。在最简单的术语中，CNN通过模拟我们人类的视觉系统工作来帮助计算机“看懂”图像或其他类似数据。</p>
-<div style="text-align: center;">
-  <img src="/images/ai-cnn.png" width="80%" alt="机器学习算法">
-</div>
-典型的卷积神经网络一般由卷积层（含激活函数）、池化层、全连接层和输出层构成，其中卷积层与池化层一般交替排列，之后接一层或者多层全连接层，最后是输出层。
-
-<div style="text-align: center;">
-  <img src="/images/ai-cnn-structure.png" width="100%" alt="机器学习算法">
-</div>
-
+<p><img src="/images/ai-cnn.png" width="80%" alt="机器学习算法"></p>
+<p>典型的卷积神经网络一般由卷积层（含激活函数）、池化层、全连接层和输出层构成，其中卷积层与池化层一般交替排列，之后接一层或者多层全连接层，最后是输出层。<img src="/images/ai-cnn-structure.png" width="100%" alt="机器学习算法"></p>
 <p>卷积运算：给定二维图像𝑰与二维卷积核𝑲，我们将其看作矩阵，根据上述二维离散卷积运算公式，图像𝑰与卷积核𝑲的卷积运算可表示为：</p>
-<div style="text-align: center;">
-  <img src="/images/ai-convolution.png" width="60%" alt="机器学习算法">
-</div>
-
+<p><img src="/images/ai-convolution.png" width="60%" alt="机器学习算法"></p>
 <p>要理解CNN，我们可以通过如何处理图像的任务来进行说明：</p>
 <h3 id="卷积层（Convolutional-Layer）："><a href="#卷积层（Convolutional-Layer）：" class="headerlink" title="卷积层（Convolutional Layer）："></a>卷积层（Convolutional Layer）：</h3><p>卷积核相当于传统计算机视觉领域中的特征算子，用于提取图像特征。</p>
-<div style="text-align: center;">
-  <img src="/images/ai-kernel.png" width="50%" alt="机器学习算法">
-</div>
-
+<p><img src="/images/ai-kernel.png" width="50%" alt="机器学习算法"></p>
 <blockquote>
 <p>假设你有一张纸上画着各种形状（如圆形、方形等）。你用一个小镜子（这就是所谓的“滤镜”或“卷积核”）来观察这张纸。每次你只能看到镜子中的一小部分图形。根据这部分，你尝试猜测这是哪种形状。移动镜子到纸上的不同部位，重复这个观察过程，最终你可以获得关于图形的不同信息。在CNN中，这个“小镜子”观察的过程就是“卷积操作”，它可以帮助模型捕捉到图像中的基本特征（如边缘、角点等）。</p>
 </blockquote>
 <h3 id="池化层（Pooling-Layer）："><a href="#池化层（Pooling-Layer）：" class="headerlink" title="池化层（Pooling Layer）："></a>池化层（Pooling Layer）：</h3><p>池化操作使用某位置相邻输出的总体统计特征作为该位置的输出，常用最大池化（max-pooling）和均值池化（average-pooling）。池化层不包含需要训练学习的参数，仅需指定池化操作的核大小、步幅以及池化类型。</p>
-<div style="text-align: center;">
-  <img src="/images/ai-pooling.png" width="50%" alt="机器学习算法">
-</div>
-
+<p><img src="/images/ai-pooling.png" width="50%" alt="机器学习算法"></p>
 <blockquote>
 <p>接下来，如果你想让镜子中看到的图像部分更抽象、更容易总结（即减小它的尺寸），你可能会选择在画好的图形上用较大的格子遮住一些部分，只保留某些重要的特征（比如形状的特定部分）。这个过程类似于“池化”，它有助于降低处理的数据量和抓取最显著的特征。</p>
 </blockquote>
@@ -307,24 +211,9 @@
 </blockquote>
 <p>总的来说，CNN通过模拟观察和结构化处理来理解图像，类似于我们通过看不同部分来理解一个完整画面的方式。</p>
 <h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><ol>
-<li><p>卷积层的作用</p>
-<ul>
-<li>浅层卷积层：提取的是图像基本特征，如边缘、方向和纹理等特征。</li>
-<li>深层卷积层：提取的是图像高阶特征，出现了高层语义模式， 如“车轮”、“人脸”等特征。</li>
-</ul>
-</li>
-<li><p>池化层的作用</p>
-<ul>
-<li>对输入对象进行“降采样（Downsampling）”操作，一定程度上提高了模型的容错能力</li>
-<li>保证了当输入出现少量平移时，输出近似不变，增强了网络对输入图像中的小变形、扭曲、平移的鲁棒性(输入里的微小扭曲不会改变池化输出）</li>
-<li>池化核的指定相当于在空间范围内对特征图的特征进行了维度约减，同时缩小了下一层输入的特征图尺寸，进而在一定程度上减少了网络的参数个数和计算量。</li>
-</ul>
-</li>
-<li>全连接层的作用<ul>
-<li>全连接层一般由一到多层的全连接神经网络组成，功能是对卷积层或池化层输出的特征图（二维）进行降维。</li>
-<li>可以将不同的区域特征合并为一个完整的特征</li>
-</ul>
-</li>
+<li>卷积层的作用  浅层卷积层：提取的是图像基本特征，如边缘、方向和纹理等特征。 深层卷积层：提取的是图像高阶特征，出现了高层语义模式， 如“车轮”、“人脸”等特征。</li>
+<li>池化层的作用  对输入对象进行“降采样（Downsampling）”操作，一定程度上提高了模型的容错能力 保证了当输入出现少量平移时，输出近似不变，增强了网络对输入图像中的小变形、扭曲、平移的鲁棒性(输入里的微小扭曲不会改变池化输出） 池化核的指定相当于在空间范围内对特征图的特征进行了维度约减，同时缩小了下一层输入的特征图尺寸，进而在一定程度上减少了网络的参数个数和计算量。</li>
+<li>全连接层的作用 全连接层一般由一到多层的全连接神经网络组成，功能是对卷积层或池化层输出的特征图（二维）进行降维。 可以将不同的区域特征合并为一个完整的特征</li>
 </ol>
 <h2 id="10-RNN（循环神经网络"><a href="#10-RNN（循环神经网络" class="headerlink" title="10.RNN（循环神经网络)"></a>10.RNN（循环神经网络)</h2><p>循环神经网络（RNN）是一种专为处理序列数据（如文字、语音或任何连续的时间数据）而设计的神经网络。与传统的神经网络不同，RNN能够处理输入之间的时间动态关系，使其特别适<br>用于那些需要理解时间序列数据或上下文信息的场景。</p>
 <p>循环神经网络（Recurrent Neural Network，RNN）是一类具有短期记忆能力的神经网络．在循环神经网络中，神经元不但可以接受其他神经元的信息，也可以接受自身的信息，形成具有环路的网络结构．和前馈神经网络相比，循环神经网络更加符合生物神经网络的结构．</p>
@@ -343,10 +232,7 @@
 </ol>
 <p>总结来说，RNN通过其内部的循环连接，能够保留信息的流动，这使它非常适用于那些需要考虑时间连续性或输入之间关系的任务。这种“记忆功能”使得RNN在自然语言处理、时间序列分析等领域表现出色。</p>
 <p>RNN（循环神经网络）由输入层、隐藏层和输出层组成，每一层都担任不同的角色。通过一个简单的例子，我们可以更好地理解这些层在RNN中的功能。</p>
-<div style="text-align: center;">
-  <img src="/images/ai-rnn.png" width="40%" alt="机器学习算法">
-</div>
-
+<p><img src="/images/ai-rnn.png" width="40%" alt="机器学习算法"></p>
 <h3 id="输入层"><a href="#输入层" class="headerlink" title="输入层"></a>输入层</h3><p>这一层的任务是接收序列中的每个元素（例如，一个句子中的单词或时间序列数据中的一个时间点）。假设我们的任务是进行文本情感分析，并且输入是一句话中的每个词。每个词首先被转化为数字形式（通常是向量，通过词嵌入技术如Word2Vec或GloVe实现），然后送入RNN。</p>
 <h4 id="例子：-7"><a href="#例子：-7" class="headerlink" title="例子："></a>例子：</h4><p>在处理句子：“我爱自然语言处理”时，每个词（例如“我”、“爱”、“自然”、“语言”、“处理”）依次被转换为向量，并输入到网络中。</p>
 <h3 id="隐藏层"><a href="#隐藏层" class="headerlink" title="隐藏层"></a>隐藏层</h3><p>隐藏层是RNN的核心，它负责处理输入并保留先前输入的信息。隐藏层中的节点会对当前输入和前一个时间步的隐藏状态进行处理，生成新的隐藏状态，这个过程会不断循环。这使得网络能够从数据的序列中“记住”信息，并用这些信息影响后续的输出。</p>
@@ -363,7 +249,7 @@
 </blockquote>
 <h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>通过输入层接收并转换数据，隐藏层处理并“记忆”序列中的信息，最后输出层根据隐藏层的信息作出决策，RNN能够有效地处理序列数据。这种结构使得RNN在语言模型、股票预浔、语音识别等众多需要理解序列数据的上下文的任务中表现优异。</p>
 <h2 id="11-Transformer"><a href="#11-Transformer" class="headerlink" title="11.Transformer"></a>11.Transformer</h2><p>Transformer 是一种深度学习模型，于 2017 年被引入，主要用于处理序列数据如文本。它在处理诸如翻译或文本生成等语言理解任务时表现出了卓越的效果。Transformer 的核心优势在于其能同时处理输入序列的所有部分，这大大加快了训练过程并提高了模型处理长距离依赖的能力。</p>
-<p> Transformer 的四个核心组件：自注意力机制、多头注意力、位置编码和前馈网络。</p>
+<p>Transformer 的四个核心组件：自注意力机制、多头注意力、位置编码和前馈网络。</p>
 <h3 id="1-自注意力机制（Self-Attention）"><a href="#1-自注意力机制（Self-Attention）" class="headerlink" title="1. 自注意力机制（Self-Attention）"></a>1. 自注意力机制（Self-Attention）</h3><p>注意力机制（attention）是人工神经网络中一种模仿认知注意力的技术。这种机制可以增强神经网络输入数据中某些部分的权重，同时减弱其他部分的权重，以此将网络的关注点聚焦于数据中最重要的小部分。数据中哪些部分比其他部分更重要取决于上下文。可以通过梯度下降法对注意力机制进行训练。</p>
 <blockquote>
 <p><strong>例子</strong>：想象一下你正在读一本关于历史的书，遇到了句子：“当王后死后，国王也很快去世。”在理解“国王”这个词时，你的大脑会特别关注“王后”，因为这个词与“国王”的状态密切相关。自注意力机制就是模拟这种在处理每个词时，评估其与句子中其他词的关系并加以利用的能力。</p>
@@ -378,10 +264,7 @@
 <p><strong>例子</strong>：假设你在一家快餐店工作，对每个客户你都要重复同样的几个步骤：接单、制作、交付。无论前一个订单是什么，处理过程基本相同。在 Transformer 中，前馈网络就是在自注意力结构后对每个位置输出相同操作的网络部分，这一处理过程对于序列中的每个元素都是独立的，类似于你对待每个快餐订单的方式。</p>
 </blockquote>
 <p>通过上述例子，可以看出 Transformer 的这些核心组件各自独立又相互配合，有效地提升了模型对序列数据的处理能力，特别是在理解和生成语言文本方面的应用。</p>
-<div style="text-align: center;">
-  <img src="/images/ai-transformer.png" width="40%" alt="机器学习算法">
-</div>
-
+<p><img src="/images/ai-transformer.png" width="40%" alt="机器学习算法"></p>
 <h2 id="12-BERT"><a href="#12-BERT" class="headerlink" title="12.BERT"></a>12.BERT</h2><p>BERT（Bidirectional Encoder Representations from Transformers）是一种基于 Transformer 模型的深度学习技术，用于自然语言处理。BERT 的主要创新之一是它的双向训练，即同时考虑文本中每个词的左侧和右侧上下文。这样的设计使得 BERT 在理解文本的复杂语义方面表现出色。</p>
 <h3 id="理解-BERT-的关键组件："><a href="#理解-BERT-的关键组件：" class="headerlink" title="理解 BERT 的关键组件："></a>理解 BERT 的关键组件：</h3><h4 id="1-基于-Transformer-的架构："><a href="#1-基于-Transformer-的架构：" class="headerlink" title="1. 基于 Transformer 的架构："></a>1. <strong>基于 Transformer 的架构</strong>：</h4><p>BERT 接纳了 Transformer 模型中的多头自注意力和位置编码技术，利用这些技术捕获词与词之间的关系，并保持词序信息。不过，BERT 仅使用了 Transformer 的编码器部分（不使用解码器）。</p>
 <h4 id="2-双向上下文理解："><a href="#2-双向上下文理解：" class="headerlink" title="2. 双向上下文理解："></a>2. <strong>双向上下文理解</strong>：</h4><p>打个比方，如果你在看一个电影的某个片段时，理解情节不仅要看这个片段之前发生了什么，还要知道后面的情节。BERT 通过双向性（同时看向文本的前后文），比传统单向模型（只从左到右或只从右到左处理文本）更好地理解每个词的含义。</p>
@@ -412,18 +295,9 @@
 <p><strong>输入：</strong> “在一个遥远的村庄里，有一个年轻的女孩，她发现了一本神秘的旧书。”</p>
 <p><strong>生成：</strong><br>GPT可以继续这个开头，写出下面的内容：<br>“书中记载着一个失落的宝藏的位置。一天晚上，月光照进她的房间，她决定跟随线索去寻宝。随着她深入森林，她遇到了各种奇怪的生物，每一个都对她的旅程产生了重要的影响……”</p>
 <h3 id="总结：-2"><a href="#总结：-2" class="headerlink" title="总结："></a>总结：</h3><ol>
-<li><strong>生成式（Generative）</strong>：模型可以生成新的文本内容。<ul>
-<li><strong>简单解释</strong>：给句子开头，模型能继续写故事。</li>
-</ul>
-</li>
-<li><strong>预训练（Pre-trained）</strong>：模型在大量文本上进行了初步训练。<ul>
-<li><strong>简单解释</strong>：模型已从大量书籍和文章中学习了语言知识。</li>
-</ul>
-</li>
-<li><strong>Transformer</strong>：一种高效的神经网络结构，擅长处理文本。<ul>
-<li><strong>简单解释</strong>：模型能同时理解一句话中的所有词，提高了理解效率。</li>
-</ul>
-</li>
+<li><strong>生成式（Generative）</strong>：模型可以生成新的文本内容。 <strong>简单解释</strong>：给句子开头，模型能继续写故事。</li>
+<li><strong>预训练（Pre-trained）</strong>：模型在大量文本上进行了初步训练。 <strong>简单解释</strong>：模型已从大量书籍和文章中学习了语言知识。</li>
+<li><strong>Transformer</strong>：一种高效的神经网络结构，擅长处理文本。 <strong>简单解释</strong>：模型能同时理解一句话中的所有词，提高了理解效率。</li>
 </ol>
 <p>通过这些关键特性，GPT可以在写作、对话、翻译等多种自然语言处理任务中发挥极大的作用，为用户提供智能而流畅的文本生成体验。大语言模型（Large Language Model, LLM）是指具有大量参数并经过大规模数据训练的自然语言处理模型。它们能够执行多种语言任务，如回答问题、生成文本、翻译语言等。</p>
 <p>以下是对“大语言模型”的简单解释和举一些易懂的例子：</p>
@@ -447,66 +321,25 @@
 <li><strong>捕获关系</strong>：嵌入通过训练学习数据中的关系，例如在文本中，经常共同出现的单词在向量空间中彼此会更接近。</li>
 </ol>
 <h3 id="例子说明：-1"><a href="#例子说明：-1" class="headerlink" title="例子说明："></a>例子说明：</h3><ol>
-<li><strong>单词嵌入</strong>：<ul>
-<li>假设你有三个单词：“狗”，“猫”，“汽车”。在没有嵌入的情况下，这三个词是完全不同的，没法比较它们之间的相似性。但如果经过合适的训练，我们可以得到一个向量空间，其中“狗”和“猫”的向量会因为它们都是宠物而彼此更接近，而和“汽车”则距离较远。</li>
-</ul>
-</li>
-<li><strong>商品嵌入</strong>：<ul>
-<li>在推荐系统中，如果用户A喜欢商品x, y, z, 而用户B喜欢商品x, y，通过商品的嵌入向量，我们可以计算出B很可能也会喜欢商品z，从而向B推荐z。</li>
-</ul>
-</li>
-<li><strong>图像嵌入</strong>：<ul>
-<li>在面部识别技术中，系统会将每个人的面部图像转换成一个数值向量。当需要验证用户身份时，只需将此时的面部图像也转为向量，然后与数据库中存储的向量进行比较，查看是否匹配。</li>
-</ul>
-</li>
+<li><strong>单词嵌入</strong>： 假设你有三个单词：“狗”，“猫”，“汽车”。在没有嵌入的情况下，这三个词是完全不同的，没法比较它们之间的相似性。但如果经过合适的训练，我们可以得到一个向量空间，其中“狗”和“猫”的向量会因为它们都是宠物而彼此更接近，而和“汽车”则距离较远。</li>
+<li><strong>商品嵌入</strong>： 在推荐系统中，如果用户A喜欢商品x, y, z, 而用户B喜欢商品x, y，通过商品的嵌入向量，我们可以计算出B很可能也会喜欢商品z，从而向B推荐z。</li>
+<li><strong>图像嵌入</strong>： 在面部识别技术中，系统会将每个人的面部图像转换成一个数值向量。当需要验证用户身份时，只需将此时的面部图像也转为向量，然后与数据库中存储的向量进行比较，查看是否匹配。</li>
 </ol>
 <p>通过嵌入技术，我们可以更有效地处理和分析各种复杂的数据，这在其他形式的机器学习任务中也有广泛的应用。总之，嵌入是将大量复杂的数据点转化为易于操作的数值形式的有效工具。</p>
 <p>当然，可以用简单的语言来解释这些机器学习的基本概念和不同类型，并通过一些例子来帮助理解。GPT（Generative Pre-trained Transformer）是一种先进的自然语言处理模型，它能生成类似于人类写作的文本。这个名字的每个部分都代表了它的独特功能和结构。让我们逐步解释每个部分，并通过简单的语言和例子来帮助你理解。</p>
 <h2 id="16-LLM（大语言模型）"><a href="#16-LLM（大语言模型）" class="headerlink" title="16.LLM（大语言模型）"></a>16.LLM（大语言模型）</h2><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><ol>
-<li><strong>规模大（Large）</strong>：<ul>
-<li><strong>含义</strong>：模型中包含了大量的参数（通常是数十亿到上百亿个参数），这些参数就像大脑中的纽带，帮助模型理解和生成语言。</li>
-<li><strong>简单解释</strong>：大语言模型就像有一个非常庞大和复杂的大脑。</li>
-</ul>
-</li>
-<li><strong>语言（Language）</strong>：<ul>
-<li><strong>含义</strong>：模型专门处理自然语言（如英语、中文）。</li>
-<li><strong>简单解释</strong>：模型非常擅长理解和生成人类语言，例如写文章、回答问题。</li>
-</ul>
-</li>
-<li><strong>模型（Model）</strong>：<ul>
-<li><strong>含义</strong>：模型是通过机器学习技术训练出来的一个系统，根据输入生成合理输出。</li>
-<li><strong>简单解释</strong>：模型就像一个非常聪明的机器人，可以根据你说的话或写的字做出反应。</li>
-</ul>
-</li>
+<li><strong>规模大（Large）</strong>： <strong>含义</strong>：模型中包含了大量的参数（通常是数十亿到上百亿个参数），这些参数就像大脑中的纽带，帮助模型理解和生成语言。 <strong>简单解释</strong>：大语言模型就像有一个非常庞大和复杂的大脑。</li>
+<li><strong>语言（Language）</strong>： <strong>含义</strong>：模型专门处理自然语言（如英语、中文）。 <strong>简单解释</strong>：模型非常擅长理解和生成人类语言，例如写文章、回答问题。</li>
+<li><strong>模型（Model）</strong>： <strong>含义</strong>：模型是通过机器学习技术训练出来的一个系统，根据输入生成合理输出。 <strong>简单解释</strong>：模型就像一个非常聪明的机器人，可以根据你说的话或写的字做出反应。</li>
 </ol>
 <h3 id="例子解释："><a href="#例子解释：" class="headerlink" title="例子解释："></a>例子解释：</h3><ol>
-<li><strong>回答问题</strong>：<ul>
-<li><strong>实际应用</strong>：你可以问大语言模型任何问题，比如“谁是爱因斯坦？”。</li>
-<li><strong>模型反应</strong>：模型会回答，“爱因斯坦是著名的物理学家，以相对论闻名。他获得了1921年诺贝尔物理学奖。”</li>
-</ul>
-</li>
-<li><strong>生成文本</strong>：<ul>
-<li><strong>实际应用</strong>：你给出一个开头，比如，“在月光下，一只小猫发现了一颗宝石……”。</li>
-<li><strong>模型反应</strong>：模型会继续写下去，比如，“它把宝石藏在自己的窝里，但很快，村里的其他动物都听说了这颗神秘的宝石，纷纷前来寻找。”</li>
-</ul>
-</li>
-<li><strong>翻译语言</strong>：<ul>
-<li><strong>实际应用</strong>：你输入一句英文，“Hello, how are you?”。</li>
-<li><strong>模型反应</strong>：模型会翻译成中文，“你好，你好吗？”</li>
-</ul>
-</li>
+<li><strong>回答问题</strong>： <strong>实际应用</strong>：你可以问大语言模型任何问题，比如“谁是爱因斯坦？”。 <strong>模型反应</strong>：模型会回答，“爱因斯坦是著名的物理学家，以相对论闻名。他获得了1921年诺贝尔物理学奖。”</li>
+<li><strong>生成文本</strong>： <strong>实际应用</strong>：你给出一个开头，比如，“在月光下，一只小猫发现了一颗宝石……”。 <strong>模型反应</strong>：模型会继续写下去，比如，“它把宝石藏在自己的窝里，但很快，村里的其他动物都听说了这颗神秘的宝石，纷纷前来寻找。”</li>
+<li><strong>翻译语言</strong>： <strong>实际应用</strong>：你输入一句英文，“Hello, how are you?”。 <strong>模型反应</strong>：模型会翻译成中文，“你好，你好吗？”</li>
 </ol>
 <h3 id="理解大语言模型的关键点："><a href="#理解大语言模型的关键点：" class="headerlink" title="理解大语言模型的关键点："></a>理解大语言模型的关键点：</h3><ol>
-<li><strong>大量数据训练</strong>：<ul>
-<li><strong>含义</strong>：大语言模型在海量的文本数据上进行训练，这些数据来自互联网、书籍、文章等。</li>
-<li><strong>简单解释</strong>：模型从海量的书本和文章中学习，积累了丰富的语言知识。</li>
-</ul>
-</li>
-<li><strong>复杂的结构</strong>：<ul>
-<li><strong>含义</strong>：大语言模型拥有深层的神经网络结构，这使它能够理解和生成复杂的语言模式。</li>
-<li><strong>简单解释</strong>：模型内有很多“层”，每层都负责处理语言的不同方面，就像一支庞大的团队，各司其职。</li>
-</ul>
-</li>
+<li><strong>大量数据训练</strong>： <strong>含义</strong>：大语言模型在海量的文本数据上进行训练，这些数据来自互联网、书籍、文章等。 <strong>简单解释</strong>：模型从海量的书本和文章中学习，积累了丰富的语言知识。</li>
+<li><strong>复杂的结构</strong>： <strong>含义</strong>：大语言模型拥有深层的神经网络结构，这使它能够理解和生成复杂的语言模式。 <strong>简单解释</strong>：模型内有很多“层”，每层都负责处理语言的不同方面，就像一支庞大的团队，各司其职。</li>
 </ol>
 <h3 id="综合例子：-2"><a href="#综合例子：-2" class="headerlink" title="综合例子："></a>综合例子：</h3><p>假设你要与一个大语言模型聊天，你可以简单地开始对话：</p>
 <p><strong>输入</strong>： “我今天感觉很开心，因为我完成了一个重要的项目。”</p>
@@ -515,53 +348,21 @@
 <p>总结起来，大语言模型（Large Language Model）是高度复杂和经过大规模训练的人工智能系统，能够高效地理解和生成自然语言，为人们提供多种文本处理能力。它的主要特点是规模大、处理语言、多功能，像一个非常聪明的机器人助手，可以用语言和你交流。OpenAI是一家致力于开发和推广友好人工智能的研究机构。自成立以来，OpenAI在人工智能领域取得了显著的进展，特别是在自然语言处理（NLP）和生成模型方面。以下是OpenAI的发展简介：</p>
 <h2 id="17-Model-Size"><a href="#17-Model-Size" class="headerlink" title="17.Model Size"></a>17.Model Size</h2><p>GPT-3大模型的“175B”指的是模型包含的参数数量，即1750亿（175 billion）个参数。这些参数主要包括权重和偏置，在模型训练过程中通过不断更新来优化模型的性能。</p>
 <h3 id="具体解释"><a href="#具体解释" class="headerlink" title="具体解释"></a>具体解释</h3><ol>
-<li><strong>参数（Parameters）</strong>：<ul>
-<li><strong>定义</strong>：参数是模型中的可调节数值，可以是权重（weights）或偏置（bias）等。它们通过神经网络的层和节点连接起来，决定了输入数据如何被处理。</li>
-<li><strong>作用</strong>：在训练过程中，模型通过调整这些参数来最小化预测误差，从而提高在各种任务上的表现。</li>
-</ul>
-</li>
-<li><strong>175B参数（175 billion parameters）</strong>：<ul>
-<li><strong>含义</strong>：GPT-3有1750亿个参数。这是一个非常庞大的数目，表明该模型有非常高的容量来学习和理解复杂的数据模式。</li>
-<li><strong>性能提升</strong>：如此多的参数使GPT-3在生成文本、回答问题、翻译语言等任务上表现非常出色，因为模型能捕捉到更多的语言细节和复杂的上下文关系。</li>
-</ul>
-</li>
+<li><strong>参数（Parameters）</strong>： <strong>定义</strong>：参数是模型中的可调节数值，可以是权重（weights）或偏置（bias）等。它们通过神经网络的层和节点连接起来，决定了输入数据如何被处理。 <strong>作用</strong>：在训练过程中，模型通过调整这些参数来最小化预测误差，从而提高在各种任务上的表现。</li>
+<li><strong>175B参数（175 billion parameters）</strong>： <strong>含义</strong>：GPT-3有1750亿个参数。这是一个非常庞大的数目，表明该模型有非常高的容量来学习和理解复杂的数据模式。 <strong>性能提升</strong>：如此多的参数使GPT-3在生成文本、回答问题、翻译语言等任务上表现非常出色，因为模型能捕捉到更多的语言细节和复杂的上下文关系。</li>
 </ol>
 <h3 id="为什么参数数量重要？"><a href="#为什么参数数量重要？" class="headerlink" title="为什么参数数量重要？"></a>为什么参数数量重要？</h3><ol>
-<li><strong>更高的表达能力</strong>：<ul>
-<li><strong>复杂模式</strong>：更多参数使模型能学习和表示数据中的复杂模式和细节。这对于不同自然语言任务（如文本生成、回答问题、翻译等）非常重要。</li>
-</ul>
-</li>
-<li><strong>改善泛化能力</strong>：<ul>
-<li><strong>多样数据适应</strong>：参数量大的模型能够处理并适应更加多样化的数据类型和任务，具有更强的泛用性和鲁棒性。</li>
-</ul>
-</li>
-<li><strong>提升性能</strong>：<ul>
-<li><strong>精准预测</strong>：更多参数通常意味着模型能提供更高的预测准确度和生成质量，特别是在应对模棱两可或复杂的语言任务时。</li>
-</ul>
-</li>
+<li><strong>更高的表达能力</strong>： <strong>复杂模式</strong>：更多参数使模型能学习和表示数据中的复杂模式和细节。这对于不同自然语言任务（如文本生成、回答问题、翻译等）非常重要。</li>
+<li><strong>改善泛化能力</strong>： <strong>多样数据适应</strong>：参数量大的模型能够处理并适应更加多样化的数据类型和任务，具有更强的泛用性和鲁棒性。</li>
+<li><strong>提升性能</strong>： <strong>精准预测</strong>：更多参数通常意味着模型能提供更高的预测准确度和生成质量，特别是在应对模棱两可或复杂的语言任务时。</li>
 </ol>
 <h3 id="例子和类比"><a href="#例子和类比" class="headerlink" title="例子和类比"></a>例子和类比</h3><ol>
-<li><strong>类比</strong>：<ul>
-<li><strong>模拟人脑</strong>：可以把模型中的参数类比为人脑中的神经元连接，越多的连接（参数）意味着“大脑”可以处理和理解更复杂的信息。</li>
-</ul>
-</li>
-<li><strong>实际应用</strong>：<ul>
-<li><strong>文本生成</strong>：GPT-3可以生成流畅、自然的文本段落，从简单对话到复杂文章，几乎可以“模仿”人类的写作风格。</li>
-<li><strong>问答系统</strong>：当你问GPT-3复杂问题时，它可以理解问题的上下文并提供合理的回答。</li>
-<li><strong>编程助手</strong>：GPT-3可以理解编程语言并生成代码片段，帮助程序员提高编程效率。</li>
-</ul>
-</li>
+<li><strong>类比</strong>： <strong>模拟人脑</strong>：可以把模型中的参数类比为人脑中的神经元连接，越多的连接（参数）意味着“大脑”可以处理和理解更复杂的信息。</li>
+<li><strong>实际应用</strong>： <strong>文本生成</strong>：GPT-3可以生成流畅、自然的文本段落，从简单对话到复杂文章，几乎可以“模仿”人类的写作风格。 <strong>问答系统</strong>：当你问GPT-3复杂问题时，它可以理解问题的上下文并提供合理的回答。 <strong>编程助手</strong>：GPT-3可以理解编程语言并生成代码片段，帮助程序员提高编程效率。</li>
 </ol>
 <h3 id="训练和资源需求"><a href="#训练和资源需求" class="headerlink" title="训练和资源需求"></a>训练和资源需求</h3><ol>
-<li><strong>计算资源</strong>：<ul>
-<li><strong>高需求</strong>：训练这样一个大模型需要非常强大的计算资源，包括大量的GPU或TPU。这要求强大的硬件支持和大量的电力供应。</li>
-</ul>
-</li>
-<li><strong>时间和成本</strong>：<ul>
-<li><strong>耗时</strong>：训练模型需要很长时间，可持续几周甚至几个月。</li>
-<li><strong>成本高</strong>：由于硬件和电力消耗巨大，训练和部署大模型的成本也非常高。</li>
-</ul>
-</li>
+<li><strong>计算资源</strong>： <strong>高需求</strong>：训练这样一个大模型需要非常强大的计算资源，包括大量的GPU或TPU。这要求强大的硬件支持和大量的电力供应。</li>
+<li><strong>时间和成本</strong>： <strong>耗时</strong>：训练模型需要很长时间，可持续几周甚至几个月。 <strong>成本高</strong>：由于硬件和电力消耗巨大，训练和部署大模型的成本也非常高。</li>
 </ol>
 <h3 id="总结-1"><a href="#总结-1" class="headerlink" title="总结"></a>总结</h3><p>GPT-3的“175B”参数代表模型内含有1750亿个可调节参数。这些参数让模型能够学习和理解非常复杂的语言模式，从而在各种自然语言处理任务中表现出色。这种大规模参数模型需要大量的计算资源和时间来训练，同时也带来了巨大的应用潜力和优秀的性能表现。</p>
 <h2 id="18-OpenAI-简介"><a href="#18-OpenAI-简介" class="headerlink" title="18.OpenAI 简介"></a>18.OpenAI 简介</h2><h3 id="成立与早期发展"><a href="#成立与早期发展" class="headerlink" title="成立与早期发展"></a>成立与早期发展</h3><p><strong>1. 成立背景:</strong></p>
@@ -731,9 +532,9 @@ d_{mreach − k} ( a ,  b ) = max \{ core_k(a),core_k(b),d(a,b)\}</script><p><st
   <entry>
     <title>错误记录</title>
     <url>/2024/10/28/errors/</url>
-    <content><![CDATA[<p></p><h2 id="1-osgearth-ttf-file-not-handled"><a href="#1-osgearth-ttf-file-not-handled" class="headerlink" title="1. osgearth .ttf: file not handled"></a>1. osgearth .ttf: file not handled</h2><p>在使用osgearth时，发生错误如下：</p><p></p>
-<p><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="title class_">Error</span> reading file <span class="attr">C</span>:<span class="regexp">/WINDOWS/</span>fonts\<span class="title class_">CascadiaCode</span>.<span class="property">ttf</span>: file not handled</span><br></pre></td></tr></table></figure></p>
-<p></p><p>经查阅可知，osg的读写字体文件的插件dll找不到了。<br><strong>解决方法</strong></p><p></p>
+    <content><![CDATA[<h2 id="1-osgearth-ttf-file-not-handled"><a href="#1-osgearth-ttf-file-not-handled" class="headerlink" title="1. osgearth .ttf: file not handled"></a>1. osgearth .ttf: file not handled</h2><p>在使用osgearth时，发生错误如下：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="title class_">Error</span> reading file <span class="attr">C</span>:<span class="regexp">/WINDOWS/</span>fonts\<span class="title class_">CascadiaCode</span>.<span class="property">ttf</span>: file not handled</span><br></pre></td></tr></table></figure>
+<p>经查阅可知，osg的读写字体文件的插件dll找不到了。<br><strong>解决方法</strong></p>
 <ol>
 <li>添加环境变量<br>在系统环境变量中添加osg 的path路径</li>
 <li>添加配置文件<br>在每个osg工程中配置osg头文件lib和dll以及plugins<br><img src="/images/errorConf.png" alt="t"></li>
@@ -743,10 +544,11 @@ d_{mreach − k} ( a ,  b ) = max \{ core_k(a),core_k(b),d(a,b)\}</script><p><st
   <entry>
     <title>Vcpkg 安装 OSGEarth</title>
     <url>/2024/10/18/InstallOSGEarth/</url>
-    <content><![CDATA[<p></p><h2 id="OSGEarth的安装"><a href="#OSGEarth的安装" class="headerlink" title="OSGEarth的安装"></a>OSGEarth的安装</h2><p>根据能查到的博客及相关教程，分两大类方法。</p><p></p>
-<p><ol></ol></p>
-<p><li>CMake 编译方法</li></p>
-<p><li>vcpkg 安装方法</li><br>&lt;/ol&gt;</p>
+    <content><![CDATA[<h2 id="OSGEarth的安装"><a href="#OSGEarth的安装" class="headerlink" title="OSGEarth的安装"></a>OSGEarth的安装</h2><p>根据能查到的博客及相关教程，分两大类方法。</p>
+<ol>
+<li>CMake 编译方法</li>
+<li>vcpkg 安装方法</li>
+</ol>
 <p>笔者在使用CMake编译方法遇到了大量的问题，使用VS编译时因为第三方库的问题，始终未能成功实现编译。在花费大量的时间后，转头使用vcpkg方法完成OSGEarth及其依赖项的安装。故在此进行记录安装过程，方便后续使用。</p>
 <h2 id="1-安装vcpkg"><a href="#1-安装vcpkg" class="headerlink" title="1. 安装vcpkg"></a>1. 安装vcpkg</h2><p>首先，下载vcpkg并执行 bootstrap.bat 脚本。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/microsoft/vcpkg</span><br><span class="line">.\vcpkg\bootstrap-vcpkg.bat</span><br></pre></td></tr></table></figure>
@@ -755,7 +557,7 @@ d_{mreach − k} ( a ,  b ) = max \{ core_k(a),core_k(b),d(a,b)\}</script><p><st
 <p>若您希望在 Visual Studio 中使用vcpkg，请运行以下命令</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vcpkg integrate install</span><br></pre></td></tr></table></figure>
 <h2 id="2-使用vcpkg安装OSGEarth"><a href="#2-使用vcpkg安装OSGEarth" class="headerlink" title="2.使用vcpkg安装OSGEarth"></a>2.使用vcpkg安装OSGEarth</h2><p>在使用vcpkg install OSGEarth 前，确保开启GL3编译</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&gt; [vcpkg安装目录]vcpkg\ports\osg\portfile.cmake 中</span><br><span class="line"><span class="keyword">if</span>(NOT DEFINED osg_OPENGL_PROFILEGL3)</span><br><span class="line">        <span class="built_in">set</span>(osg_OPENGL_PROFILEGL3 <span class="string">&quot;GL2&quot;</span>) //这里的GL2改为GL3</span><br><span class="line">endif()</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&gt; [vcpkg安装目录]vcpkg\ports\osg\portfile.cmake 中</span><br><span class="line"><span class="keyword">if</span>(NOT DEFINED osg_OPENGL_PROFILEGL3)</span><br><span class="line">        <span class="built_in">set</span>(osg_OPENGL_PROFILEGL3 <span class="string">&quot;GL2&quot;</span>) //这里的GL2改为GL3</span><br><span class="line">endif()</span><br></pre></td></tr></table></figure>
 <p>在vcpkg的根目录中以打开CMD，并输入</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vcpkg install osgearth:x64-windows</span><br></pre></td></tr></table></figure>
 <p>即可完成安装，是的，只要这一行指令就可以完成安装，相比之下，CMake简直是让人吐血。vcpkg 安装OSGEarth时，会自动安装OSGEarth所需的各种依赖项。</p>
@@ -770,10 +572,10 @@ d_{mreach − k} ( a ,  b ) = max \{ core_k(a),core_k(b),d(a,b)\}</script><p><st
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">vcpkg integrate install</span><br></pre></td></tr></table></figure>
 <p>将vcpkg中安装的bin加入到环境变量中：</p>
 <p><img src="/images/Install3.png" alt="t"></p>
-<h2 id="5-测试用例"><a href="#5-测试用例" class="headerlink" title="5.测试用例"></a>5.测试用例</h2> <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"> <span class="meta">#<span class="keyword">include</span> <span class="string">&lt;osgEarth/MapNode&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;osgEarth/TMS&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;osgEarth/EarthManipulator&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;osg/ArgumentParser&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;osgViewer/Viewer&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">char</span>** argv)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    osgEarth::<span class="built_in">initialize</span>();</span><br><span class="line"></span><br><span class="line">    <span class="function">osg::ArgumentParser <span class="title">args</span><span class="params">(&amp;argc, argv)</span></span>;</span><br><span class="line">    <span class="function">osgViewer::Viewer <span class="title">viewer</span><span class="params">(args)</span></span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">auto</span> imagery = <span class="keyword">new</span> osgEarth::<span class="built_in">TMSImageLayer</span>();</span><br><span class="line">    imagery-&gt;<span class="built_in">setURL</span>(<span class="string">&quot;https://readymap.org/readymap/tiles/1.0.0/7/&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">auto</span> mapNode = <span class="keyword">new</span> osgEarth::<span class="built_in">MapNode</span>();</span><br><span class="line">    mapNode-&gt;<span class="built_in">getMap</span>()-&gt;<span class="built_in">addLayer</span>(imagery);</span><br><span class="line"></span><br><span class="line">    viewer.<span class="built_in">setSceneData</span>(mapNode);</span><br><span class="line">    viewer.<span class="built_in">setCameraManipulator</span>(<span class="keyword">new</span> osgEarth::<span class="built_in">EarthManipulator</span>(args));</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> viewer.<span class="built_in">run</span>();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="5-测试用例"><a href="#5-测试用例" class="headerlink" title="5.测试用例"></a>5.测试用例</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"> <span class="meta">#<span class="keyword">include</span> <span class="string">&lt;osgEarth/MapNode&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;osgEarth/TMS&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;osgEarth/EarthManipulator&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;osg/ArgumentParser&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;osgViewer/Viewer&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">char</span>** argv)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    osgEarth::<span class="built_in">initialize</span>();</span><br><span class="line"></span><br><span class="line">    <span class="function">osg::ArgumentParser <span class="title">args</span><span class="params">(&amp;argc, argv)</span></span>;</span><br><span class="line">    <span class="function">osgViewer::Viewer <span class="title">viewer</span><span class="params">(args)</span></span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">auto</span> imagery = <span class="keyword">new</span> osgEarth::<span class="built_in">TMSImageLayer</span>();</span><br><span class="line">    imagery-&gt;<span class="built_in">setURL</span>(<span class="string">&quot;https://readymap.org/readymap/tiles/1.0.0/7/&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">auto</span> mapNode = <span class="keyword">new</span> osgEarth::<span class="built_in">MapNode</span>();</span><br><span class="line">    mapNode-&gt;<span class="built_in">getMap</span>()-&gt;<span class="built_in">addLayer</span>(imagery);</span><br><span class="line"></span><br><span class="line">    viewer.<span class="built_in">setSceneData</span>(mapNode);</span><br><span class="line">    viewer.<span class="built_in">setCameraManipulator</span>(<span class="keyword">new</span> osgEarth::<span class="built_in">EarthManipulator</span>(args));</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> viewer.<span class="built_in">run</span>();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>由于gl.h的问题，需要加入预处理器WIN32</p>
 <p><img src="/images/Install4.png" alt="t"></p>
-<p> 发现出现了以下的问题：</p>
+<p>发现出现了以下的问题：</p>
 <p><img src="/images/Install5.png" alt="t"></p>
 <p>这是由于一些动态链接库并没有被导入bin中</p>
 <p>将下列所有的dll文件移动到你的工程文件所对应的release目录中，注意如果使用debug进行调试,需要将vcpkg中debug目录下的dll和pdb文件移动到对应debug目录中。</p>
@@ -783,7 +585,7 @@ d_{mreach − k} ( a ,  b ) = max \{ core_k(a),core_k(b),d(a,b)\}</script><p><st
 <p>完结散花，欧耶！</p>
 <h2 id="6-总结"><a href="#6-总结" class="headerlink" title="6.总结"></a>6.总结</h2><p>建议使用vcpkg一步到位，CMake太折磨人了，对我来说。。。。我花了很久的时间，完成最终的安装，有点儿吐血。</p>
 <p>后续有必要的话，可以下载OSGEarth源码进行学习。</p>
-<h2 id="7-参考链接"><a href="#7-参考链接" class="headerlink" title="7. 参考链接"></a>7. 参考链接</h2><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/720367150">2024 - osgEarth+vs2022最新环境配置</a><br><a target="_blank" rel="noopener" href="https://huangwang.github.io/2021/07/28/Windows%E4%B8%8BOsgEarth%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B/">Windows下OsgEarth编译安装过程</a><br><a target="_blank" rel="noopener" href="https://docs.osgearth.org/en/latest/install.html">Getting started with osgEarth</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_61776040/article/details/138897125">使用vcpkg安装osg、osgearth、osgQt</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_61776040/article/details/138126419">使用cmake和vcpkg构建最新osgearth3.5</a><br><a target="_blank" rel="noopener" href="https://blog.songjiahao.com/archives/1067">vcpkg安装库的导出和使用</a></p>
+<h2 id="7-参考链接"><a href="#7-参考链接" class="headerlink" title="7. 参考链接"></a>7. 参考链接</h2><p>2024 - osgEarth+vs2022最新环境配置<br>Windows下OsgEarth编译安装过程<br>Getting started with osgEarth<br>使用vcpkg安装osg、osgearth、osgQt<br>使用cmake和vcpkg构建最新osgearth3.5<br>vcpkg安装库的导出和使用</p>
 ]]></content>
       <categories>
         <category>OSGEarth</category>

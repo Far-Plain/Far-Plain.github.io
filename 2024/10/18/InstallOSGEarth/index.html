@@ -111,12 +111,12 @@
 
 
 
-<meta name="description" content="OSGEarth的安装根据能查到的博客及相关教程，分两大类方法。  CMake 编译方法 vcpkg 安装方法&lt;&#x2F;ol&gt; 笔者在使用CMake编译方法遇到了大量的问题，使用VS编译时因为第三方库的问题，始终未能成功实现编译。在花费大量的时间后，转头使用vcpkg方法完成OSGEarth及其依赖项的安装。故在此进行记录安装过程，方便后续使用。 1. 安装vcpkg首先，下载vcpkg并执">
+<meta name="description" content="OSGEarth的安装根据能查到的博客及相关教程，分两大类方法。  CMake 编译方法 vcpkg 安装方法  笔者在使用CMake编译方法遇到了大量的问题，使用VS编译时因为第三方库的问题，始终未能成功实现编译。在花费大量的时间后，转头使用vcpkg方法完成OSGEarth及其依赖项的安装。故在此进行记录安装过程，方便后续使用。 1. 安装vcpkg首先，下载vcpkg并执行 bootstra">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Vcpkg 安装 OSGEarth">
 <meta property="og:url" content="https://far-plain.github.io/2024/10/18/InstallOSGEarth/index.html">
 <meta property="og:site_name" content="Zhang&#39;s Blog">
-<meta property="og:description" content="OSGEarth的安装根据能查到的博客及相关教程，分两大类方法。  CMake 编译方法 vcpkg 安装方法&lt;&#x2F;ol&gt; 笔者在使用CMake编译方法遇到了大量的问题，使用VS编译时因为第三方库的问题，始终未能成功实现编译。在花费大量的时间后，转头使用vcpkg方法完成OSGEarth及其依赖项的安装。故在此进行记录安装过程，方便后续使用。 1. 安装vcpkg首先，下载vcpkg并执">
+<meta property="og:description" content="OSGEarth的安装根据能查到的博客及相关教程，分两大类方法。  CMake 编译方法 vcpkg 安装方法  笔者在使用CMake编译方法遇到了大量的问题，使用VS编译时因为第三方库的问题，始终未能成功实现编译。在花费大量的时间后，转头使用vcpkg方法完成OSGEarth及其依赖项的安装。故在此进行记录安装过程，方便后续使用。 1. 安装vcpkg首先，下载vcpkg并执行 bootstra">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://far-plain.github.io/images/Install1.png">
 <meta property="og:image" content="https://far-plain.github.io/images/Install2.png">
@@ -126,7 +126,7 @@
 <meta property="og:image" content="https://far-plain.github.io/images/Install6.png">
 <meta property="og:image" content="https://far-plain.github.io/images/Install7.png">
 <meta property="article:published_time" content="2024-10-18T05:40:41.000Z">
-<meta property="article:modified_time" content="2026-09-26T07:48:52.792Z">
+<meta property="article:modified_time" content="2026-09-26T07:54:35.925Z">
 <meta property="article:author" content="Zhang Shuaizhang">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://far-plain.github.io/images/Install1.png">
@@ -425,7 +425,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  841
+                  838
                 </span>
               
 
@@ -450,10 +450,11 @@
       
 
       
-        <p></p><h2 id="OSGEarth的安装"><a href="#OSGEarth的安装" class="headerlink" title="OSGEarth的安装"></a>OSGEarth的安装</h2><p>根据能查到的博客及相关教程，分两大类方法。</p><p></p>
-<p><ol></ol></p>
-<p><li>CMake 编译方法</li></p>
-<p><li>vcpkg 安装方法</li><br>&lt;/ol&gt;</p>
+        <h2 id="OSGEarth的安装"><a href="#OSGEarth的安装" class="headerlink" title="OSGEarth的安装"></a>OSGEarth的安装</h2><p>根据能查到的博客及相关教程，分两大类方法。</p>
+<ol>
+<li>CMake 编译方法</li>
+<li>vcpkg 安装方法</li>
+</ol>
 <p>笔者在使用CMake编译方法遇到了大量的问题，使用VS编译时因为第三方库的问题，始终未能成功实现编译。在花费大量的时间后，转头使用vcpkg方法完成OSGEarth及其依赖项的安装。故在此进行记录安装过程，方便后续使用。</p>
 <h2 id="1-安装vcpkg"><a href="#1-安装vcpkg" class="headerlink" title="1. 安装vcpkg"></a>1. 安装vcpkg</h2><p>首先，下载vcpkg并执行 bootstrap.bat 脚本。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/microsoft/vcpkg</span><br><span class="line">.\vcpkg\bootstrap-vcpkg.bat</span><br></pre></td></tr></table></figure>
@@ -462,7 +463,7 @@
 <p>若您希望在 Visual Studio 中使用vcpkg，请运行以下命令</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vcpkg integrate install</span><br></pre></td></tr></table></figure>
 <h2 id="2-使用vcpkg安装OSGEarth"><a href="#2-使用vcpkg安装OSGEarth" class="headerlink" title="2.使用vcpkg安装OSGEarth"></a>2.使用vcpkg安装OSGEarth</h2><p>在使用vcpkg install OSGEarth 前，确保开启GL3编译</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt; [vcpkg安装目录]vcpkg\ports\osg\portfile.cmake 中</span><br><span class="line"><span class="keyword">if</span>(NOT DEFINED osg_OPENGL_PROFILEGL3)</span><br><span class="line">        <span class="built_in">set</span>(osg_OPENGL_PROFILEGL3 <span class="string">&quot;GL2&quot;</span>) //这里的GL2改为GL3</span><br><span class="line">endif()</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt; [vcpkg安装目录]vcpkg\ports\osg\portfile.cmake 中</span><br><span class="line"><span class="keyword">if</span>(NOT DEFINED osg_OPENGL_PROFILEGL3)</span><br><span class="line">        <span class="built_in">set</span>(osg_OPENGL_PROFILEGL3 <span class="string">&quot;GL2&quot;</span>) //这里的GL2改为GL3</span><br><span class="line">endif()</span><br></pre></td></tr></table></figure>
 <p>在vcpkg的根目录中以打开CMD，并输入</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vcpkg install osgearth:x64-windows</span><br></pre></td></tr></table></figure>
 <p>即可完成安装，是的，只要这一行指令就可以完成安装，相比之下，CMake简直是让人吐血。vcpkg 安装OSGEarth时，会自动安装OSGEarth所需的各种依赖项。</p>
@@ -477,10 +478,10 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vcpkg integrate install</span><br></pre></td></tr></table></figure>
 <p>将vcpkg中安装的bin加入到环境变量中：</p>
 <p><img src="/images/Install3.png" alt="t"></p>
-<h2 id="5-测试用例"><a href="#5-测试用例" class="headerlink" title="5.测试用例"></a>5.测试用例</h2> <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"> <span class="meta">#<span class="keyword">include</span> <span class="string">&lt;osgEarth/MapNode&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;osgEarth/TMS&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;osgEarth/EarthManipulator&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;osg/ArgumentParser&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;osgViewer/Viewer&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">char</span>** argv)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    osgEarth::<span class="built_in">initialize</span>();</span><br><span class="line"></span><br><span class="line">    <span class="function">osg::ArgumentParser <span class="title">args</span><span class="params">(&amp;argc, argv)</span></span>;</span><br><span class="line">    <span class="function">osgViewer::Viewer <span class="title">viewer</span><span class="params">(args)</span></span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">auto</span> imagery = <span class="keyword">new</span> osgEarth::<span class="built_in">TMSImageLayer</span>();</span><br><span class="line">    imagery-&gt;<span class="built_in">setURL</span>(<span class="string">&quot;https://readymap.org/readymap/tiles/1.0.0/7/&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">auto</span> mapNode = <span class="keyword">new</span> osgEarth::<span class="built_in">MapNode</span>();</span><br><span class="line">    mapNode-&gt;<span class="built_in">getMap</span>()-&gt;<span class="built_in">addLayer</span>(imagery);</span><br><span class="line"></span><br><span class="line">    viewer.<span class="built_in">setSceneData</span>(mapNode);</span><br><span class="line">    viewer.<span class="built_in">setCameraManipulator</span>(<span class="keyword">new</span> osgEarth::<span class="built_in">EarthManipulator</span>(args));</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> viewer.<span class="built_in">run</span>();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="5-测试用例"><a href="#5-测试用例" class="headerlink" title="5.测试用例"></a>5.测试用例</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"> <span class="meta">#<span class="keyword">include</span> <span class="string">&lt;osgEarth/MapNode&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;osgEarth/TMS&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;osgEarth/EarthManipulator&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;osg/ArgumentParser&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;osgViewer/Viewer&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">char</span>** argv)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    osgEarth::<span class="built_in">initialize</span>();</span><br><span class="line"></span><br><span class="line">    <span class="function">osg::ArgumentParser <span class="title">args</span><span class="params">(&amp;argc, argv)</span></span>;</span><br><span class="line">    <span class="function">osgViewer::Viewer <span class="title">viewer</span><span class="params">(args)</span></span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">auto</span> imagery = <span class="keyword">new</span> osgEarth::<span class="built_in">TMSImageLayer</span>();</span><br><span class="line">    imagery-&gt;<span class="built_in">setURL</span>(<span class="string">&quot;https://readymap.org/readymap/tiles/1.0.0/7/&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">auto</span> mapNode = <span class="keyword">new</span> osgEarth::<span class="built_in">MapNode</span>();</span><br><span class="line">    mapNode-&gt;<span class="built_in">getMap</span>()-&gt;<span class="built_in">addLayer</span>(imagery);</span><br><span class="line"></span><br><span class="line">    viewer.<span class="built_in">setSceneData</span>(mapNode);</span><br><span class="line">    viewer.<span class="built_in">setCameraManipulator</span>(<span class="keyword">new</span> osgEarth::<span class="built_in">EarthManipulator</span>(args));</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> viewer.<span class="built_in">run</span>();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>由于gl.h的问题，需要加入预处理器WIN32</p>
 <p><img src="/images/Install4.png" alt="t"></p>
-<p> 发现出现了以下的问题：</p>
+<p>发现出现了以下的问题：</p>
 <p><img src="/images/Install5.png" alt="t"></p>
 <p>这是由于一些动态链接库并没有被导入bin中</p>
 <p>将下列所有的dll文件移动到你的工程文件所对应的release目录中，注意如果使用debug进行调试,需要将vcpkg中debug目录下的dll和pdb文件移动到对应debug目录中。</p>
@@ -490,7 +491,7 @@
 <p>完结散花，欧耶！</p>
 <h2 id="6-总结"><a href="#6-总结" class="headerlink" title="6.总结"></a>6.总结</h2><p>建议使用vcpkg一步到位，CMake太折磨人了，对我来说。。。。我花了很久的时间，完成最终的安装，有点儿吐血。</p>
 <p>后续有必要的话，可以下载OSGEarth源码进行学习。</p>
-<h2 id="7-参考链接"><a href="#7-参考链接" class="headerlink" title="7. 参考链接"></a>7. 参考链接</h2><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/720367150">2024 - osgEarth+vs2022最新环境配置</a><br><a target="_blank" rel="noopener" href="https://huangwang.github.io/2021/07/28/Windows%E4%B8%8BOsgEarth%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B/">Windows下OsgEarth编译安装过程</a><br><a target="_blank" rel="noopener" href="https://docs.osgearth.org/en/latest/install.html">Getting started with osgEarth</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_61776040/article/details/138897125">使用vcpkg安装osg、osgearth、osgQt</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_61776040/article/details/138126419">使用cmake和vcpkg构建最新osgearth3.5</a><br><a target="_blank" rel="noopener" href="https://blog.songjiahao.com/archives/1067">vcpkg安装库的导出和使用</a></p>
+<h2 id="7-参考链接"><a href="#7-参考链接" class="headerlink" title="7. 参考链接"></a>7. 参考链接</h2><p>2024 - osgEarth+vs2022最新环境配置<br>Windows下OsgEarth编译安装过程<br>Getting started with osgEarth<br>使用vcpkg安装osg、osgearth、osgQt<br>使用cmake和vcpkg构建最新osgearth3.5<br>vcpkg安装库的导出和使用</p>
 
       
     </div>
